@@ -3,6 +3,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
+    res.render('Hello welcome to homepage')
     res.json({message: 'Hello welcome to homepage'})
 })
 
