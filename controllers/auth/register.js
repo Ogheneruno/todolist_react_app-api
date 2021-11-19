@@ -1,6 +1,5 @@
 const {User} = require('../../models/User');
 const bcryptjs = require('bcryptjs');
-const welcomeEmail = require('../../utils/WelcomeEmail');
 const randomstring = require('randomstring');
 
 const createNewUser = async (req, res, next) => {
