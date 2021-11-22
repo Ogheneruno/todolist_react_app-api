@@ -7,7 +7,7 @@ dotenv.config();
 
 const server = http.createServer(app);
 
-const port = process.env.PORT || 2000;
+const port = process.env.PORT || 1000;
 
 mongoose.connect(process.env.mongoDB_URL)
     .then(() => console.log('Database up and doing::: '))

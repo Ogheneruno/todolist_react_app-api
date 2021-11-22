@@ -8,6 +8,7 @@ const createTodo = require('../../controllers/todo/createTodo');
 const getAll = require('../../controllers/todo/getAll');
 const updateTodo = require('../../controllers/todo/updateTodo');
 const deleteTodo = require('../../controllers/todo/deleteTodo');
+const completedTodo = require('../../controllers/todo/completedTodo');
 
 
 
@@ -19,7 +20,10 @@ router.route('/delete/:id')
     .delete(verify, deleteTodo);
 
 router.route('/put/:id')
-    .post(updateTodo);
+    .put(updateTodo);
+
+router.route('/post/:id')
+    .post(completedTodo);
 
 
 
